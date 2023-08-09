@@ -1,0 +1,263 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	/*font-family: 'Quicksand', sans-serif;*/
+    font-family: 'Roboto Condensed', sans-serif;
+	font-size: 62.5%;
+}
+
+:root {
+	--main-green: #248540;
+	--yacambu-orange: #e55d27;
+	--green-leaf: #9cb71d;
+	--light-orange: #ef8c60;
+	--very-light-orange: #f1ccbc;
+
+	--very-light-gray:#d8d6d6;
+	--text-input-field: #F7F7F7;
+	--hospital-green: #ACD982;
+	--very-light-blue:#e9f1f8;
+	--dark-blue: #252C5A;
+	--white: #FFFFFF;
+	--black: #000000;
+	--medium-blue: #048ba3;
+	--kind-pink: #f7e8e3;
+	--dark-pink:  #f8879a;
+	--background: #fcf9f9;
+
+	--rojo-granate: #AB2A3E;
+	--verde-planta: #7eab2a;
+	--verde-azulado: #2aab97;
+	--morado-brillante: #562aab;
+	--azul-brillante: #2a3eab;
+	--granate-oscuro: #401017;
+
+	--granate-claro: #b73d4b;
+
+	--ss: 1.2rem;
+	--sm: 1.4rem;
+	--md: 1.5rem;
+	--lg: 2rem;
+	--xlg: 2.4rem;
+	--xxlg: 3.5rem;
+	--xxxlg: 5.5rem;
+}
+
+main {
+	width: 100%;
+	font-size: var(--sm);
+}
+
+section {
+	padding: 4rem 0;
+}
+
+h1 {
+	padding: 0 1rem;
+	font-family: 'Dancing Script', cursive;
+	text-align: center;
+	font-weight: bold;
+	font-size: var(--xlg);
+	margin-bottom: 2rem;
+	color: var(--white);
+}
+
+h2 {
+	padding: 1rem;
+}
+
+div {
+	width: 30rem;
+	margin: 0 auto;
+}
+
+h2, p, select {
+	text-align: center;
+}
+
+p {
+	margin-top: 1rem;
+}
+
+table {
+	margin: 0 auto;
+}
+
+table {
+	border-collapse: collapse;
+	margin-top: 1rem;
+}
+
+table tr {
+	height: 2rem;
+}
+
+.logo-container {
+	background-color: var(--white);
+	width: 37.2rem;
+	height: 12.5rem;
+	background-image: url('./img/logo-yacambu.png');
+	background-position: center;
+    background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+/* Información de Propietarios */
+.propietarios {
+	padding-top: 0;
+}
+
+.propietarios div {
+	width: 30rem;
+	margin: 2rem auto;
+	text-align: center;
+}
+
+.propietarios div:nth-child(3) {
+	border-top: 0.2rem solid var(--yacambu-orange);
+	padding-top: 2rem;
+	margin-top: 0;
+}
+
+.tabla-propietarios {
+	background-color: var(--white);
+	margin-bottom: 2rem;
+}
+
+.tabla-propietarios thead tr {
+	height: 2.7rem;
+}
+
+.tabla-propietarios th, .tabla-propietarios td {
+	padding: 0.5rem;
+}
+
+.tabla-propietarios thead th {
+	background-color: var(--yacambu-orange);
+	color: var(--white);
+	font-weight: normal;
+}
+
+.tabla-propietarios thead tr:first-child th,
+.tabla-propietarios thead tr:first-child {
+	border-top-left-radius: 0.5rem;
+	border-top-right-radius: 0.5rem;
+	border: 0.1rem solid var(--white);
+}
+
+.tabla-propietarios thead tr:first-child th,
+.tabla-propietarios thead tr:nth-child(2) th,
+.tabla-propietarios thead tr:nth-child(3) th,
+.tabla-propietarios tbody tr {
+	border-left: 0.1rem solid var(--white);
+	border-right: 0.1rem solid var(--white);
+}
+
+.tabla-propietarios thead tr:nth-child(4) th {
+	border: 0.1rem solid var(--white);
+}
+
+.tabla-propietarios tbody tr td:first-child {
+	text-align: start;
+}
+
+.tabla-propietarios tbody tr td:nth-child(2), table tbody tr td:nth-child(3) {
+	text-align: end;
+}
+
+.columna-mes {
+	width: 7rem;
+}
+
+#selected_owner {
+	border: none;
+	height: 2rem;
+	border-radius: 0.5rem;
+}
+
+.propietarios div:nth-child(5) {
+	border-top: 0.2rem solid var(--main-green);
+	padding-top: 2rem;
+	margin-top: 0;
+}
+
+.recibos-container p:first-child {
+	text-align: start;
+}
+
+.inputs-radio-container {
+	border: 0.5rem solid var(--main-green);
+	padding: 1rem;
+	border-radius: 0.5rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	justify-items: start;
+}
+
+#numero_recibo {
+	width: 15rem;
+	height: 3rem;
+	background-color: var(--text-input-field);
+	border: none;
+	border-radius: 0.5rem;
+	margin-top: 0.5rem;
+}
+
+#numero_recibo:hover {
+	border: 0.2rem solid var(--main-green);
+}
+
+#boton_tabla {
+	border: 0.4rem solid var(--light-orange);
+	background-color: var(--yacambu-orange);
+	color: var(--white);
+	font-weight: bold;
+	border-radius: 2rem;
+	margin-top: 2rem;
+	width: 25rem;
+	height: 5rem;
+}
+
+#boton_tabla:hover {
+	font-size: 1.4rem;
+	cursor: pointer;
+}
+
+#boton_tabla:active {
+	background-color: var(--white);
+	color: var(--yacambu-orange);
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2),
+				-2px -2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+#boton_recibo {
+	border: 0.4rem solid var(--green-leaf);
+	background-color: var(--main-green);
+	color: var(--white);
+	font-weight: bold;
+	border-radius: 2rem;
+	margin-top: 2rem;
+	width: 25rem;
+	height: 5rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	margin: 2rem auto 0;
+}
+
+#boton_recibo:hover {
+	font-size: 1.4rem;
+	cursor: pointer;
+}
+
+#boton_recibo:active {
+	background-color: var(--white);
+	color: var(--main-green);
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2),
+				-2px -2px 2px 1px rgba(0, 0, 0, 0.2);
+}
